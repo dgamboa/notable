@@ -1,0 +1,18 @@
+<%= form_for [@topic, @note = Note.new] do |f| %>
+  <% if @note.errors.any? %>
+    <div id="error_messages">
+      <h2>Form is invalid</h2>
+      <ul>
+        <% @note.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :body %>
+    <%= f.text_field :body %>
+  </div>
+  <div class="actions"><%= f.submit %></div>
+<% end %>
