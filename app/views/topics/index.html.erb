@@ -1,0 +1,7 @@
+<% @topics.each do |topic| %>
+  <div class="topics">
+    <ul>
+      <li><%= link_to topic.title, topic_path(topic) %></li>
+    </ul>
+  </div>
+<% end %>

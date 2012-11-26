@@ -1,0 +1,11 @@
+<h2><%= @topic.title %></h2>
+
+<div class="notes">
+  <h3>Notes</h3>
+  <div class="new_note">
+    <%= render "notes/form" %>
+  </div>
+  <div class="note_list">
+    <%= render @topic.notes %>
+  </div>
+</div>
