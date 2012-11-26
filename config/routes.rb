@@ -5,7 +5,8 @@ Notable::Application.routes.draw do
 
   resources :users
   resources :sessions
+  resources :topics
 
-  root :to => "users#index"
+  root to: "topics#index"
   # root to: "topics#index"
 end
