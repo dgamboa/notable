@@ -8,13 +8,13 @@ class SessionsController < ApplicationController
       session[:user_id] = user.id
       redirect_to root_url, notice: "Logged In Succesfully!"
     else
-      flash.now.alert = "Email or password invalid"
+      flash.now.alert = "Woops! Email or password invalid"
       render "new"
     end
   end
 
   def destroy
     session[:user_id] = nil
-    redirect_to root_url, notice: "Logged out!"
+    redirect_to root_url, notice: "See you soon!"
   end
 end

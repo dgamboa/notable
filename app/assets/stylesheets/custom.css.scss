@@ -19,32 +19,36 @@ a {
   height: 100%;
   width: 900px;
   margin: auto auto;
-  background-color: #2E0834;
+  background-color: #162232;
   box-shadow: 0px 0px 6px 1px #111;
 }
 
 #brand a {
   position: absolute;
-  top: 15px;
-  left: 25px;
+  top: 19px;
+  left: 30px;
   margin: 0;
-  color: #FFF;
   font-size: 30px;
   font-weight: 100;
   letter-spacing: 1px;
+  color: #292929;
+  text-shadow: 0 0 25px #CCC;
+  &:hover {
+    color: #fff;
+  }
 }
 
 #login_header {
   position: absolute;
-  top: 33px;
-  right: 25px;
-  color: #FFF;
+  top: 38px;
+  right: 30px;
+  color: #AAA;
   font-size: 11px;
   a {
     margin: 0 3px;
-    color: #0FF;
+    color: #0CC;
   }
   a:hover {
-    color: #42A0FB;
+    color: #FFF;
   }
 }
